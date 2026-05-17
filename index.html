@@ -63,6 +63,17 @@
         <canvas id="financeChart" width="800" height="260"></canvas>
       </section>
 
+      <section class="card trend">
+        <div class="transactions__header">
+          <h3 class="section-title">Monthly Expense Trend</h3>
+          <p class="transactions__meta">Expense by month</p>
+        </div>
+
+        <div class="trend-list" id="monthlyTrendContainer">
+         <p>No expense trend data available.</p>
+      </div>
+      </section>
+
       <section class="grid">
         <div class="card form">
           <h3 class="section-title">Add Transaction</h3>
@@ -209,8 +220,36 @@
       </div>
     </div>
 
+    <!-- ==================== Cookie Banner + Privacy Policy ==================== -->
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+      <div class="cookie-content">
+        <p>本网站使用 cookies 来提升您的体验。点击「接受」即表示您同意我们的 
+          <a href="#" id="privacy-link-banner" class="privacy-link">隐私政策</a>。
+        </p>
+        <button id="accept-cookie" class="accept-btn">接受</button>
+      </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+      <div class="modal__content" style="max-width: 620px; width: 92%; max-height: 88vh; overflow-y: auto;">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>隐私政策</h2>
+        <div class="privacy-text">
+          <p><strong>生效日期：</strong>2026 年 5 月</p>
+          <p>Advanced Finance Tracker 是一款纯前端个人财务追踪器，使用 LocalStorage 存储您的交易数据。</p>
+          <p>我们<strong>不收集、不传输</strong>任何个人信息到服务器，也不使用第三方追踪 Cookie。</p>
+          <p>所有数据仅保存在您的浏览器本地。您可以随时通过「重置数据」按钮清除所有记录。</p>
+          <p>如有任何隐私相关问题，请联系开发者。</p>
+          <p>本隐私政策仅供演示用途，实际使用请根据您的需求自行调整。</p>
+        </div>
+      </div>
+    </div>
+    <!-- ====================================================================== -->
+
     <div class="toast-container" id="toastContainer"></div>
 
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
